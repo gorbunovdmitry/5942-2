@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.landing {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Изображение кредитной карты */
+.credit-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.landing__content {
+  padding: 0 20px 20px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.landing__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  text-align: center;
+  color: #000;
+  line-height: 1.2;
+}
+
+.landing__subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-align: center;
+  color: #000;
+  line-height: 1.2;
+}
+
+.landing__desc {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 32px 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Блоки с преимуществами */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex: 1;
+}
+
+.feature {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.feature__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.feature__desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Кнопка */
+.landing__button {
+  width: 100%;
+  padding: 16px 0;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: auto;
+}
+
+.landing__button:hover {
+  background: #333;
+}
+
+.landing__button:active {
+  background: #555;
+  transform: translateY(1px);
+}
+
+/* Заглушка */
+.placeholder {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.placeholder__img {
+  width: 220px;
+  max-width: 60vw;
+  margin-bottom: 32px;
+}
+
+.placeholder__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.placeholder__desc {
+  font-size: 18px;
+  color: #222;
+  max-width: 90vw;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .landing {
+    max-width: 100vw;
+  }
+  
+  .credit-card-image {
+    padding: 16px 16px 0 16px;
+  }
+  
+  .landing__content {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .landing__title,
+  .landing__subtitle {
+    font-size: 24px;
+  }
+  
+  .feature {
+    padding: 14px;
+  }
+  
+  .placeholder__img {
+    width: 150px;
+  }
+  
+  .placeholder__title {
+    font-size: 28px;
+  }
+  
+  .placeholder__desc {
+    font-size: 16px;
+  }
+} 
